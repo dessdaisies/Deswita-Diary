@@ -1,0 +1,144 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #faeaf0;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: #ea7db2;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    margin: 10px;
+}
+
+header p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+nav{
+    background-color: #ffd1e6;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 6px 12px;
+}
+
+nav a:hover{
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 5px;
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+section{
+    margin-top: 30px;
+}
+
+section h2{
+    border-bottom: 2px solid pink;
+    padding-bottom: 5px;
+    font-size: 24px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td{
+    border: 1px solid pink;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+.foto-home{
+    display: block;
+    margin: 25px auto;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: 180px;
+    height: 230px;
+    object-fit: cover;
+    border: 3px solid rgb(203,125,147);
+    border-radius: 10px;
+}
+
+.caption{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.message-box{
+    background-color: #fff0f6;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid rgb(248, 174, 186);
+    margin-top: 20px;
+}
+
+form{
+    margin-top: 15px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ffb6d9;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+input[type="submit"]{
+    background-color: #ff4fa3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    background-color: #ff2a8a;
+}
+
+footer{
+    background-color: #eaa2c4;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
