@@ -23,15 +23,16 @@
         <section class="message-box">
             <h2>Send Me a Message</h2>
 
-            <form>
+           <form id="formPesan">
+            <p id="notif"></p>
                 <label>Nama:</label><br>
-                <input type="text" name="nama"><br><br>
+                <input type="text" name="nama" required>
 
                 <label>Email:</label><br>
-                <input type="email" name="email"><br><br>
+                <input type="email" name="email" required>
 
                 <label>Umur:</label><br>
-                <input type="number" name="umur"><br><br>
+                <input type="number" name="umur" required>
                 
                 <label>Bagian apa yang kamu suka dari website ini?</label><br>
                 <select name="favorite">
@@ -43,7 +44,7 @@
                 <br><br>
 
                 <label>Pesan:</label><br>
-                <textarea name="pesan"></textarea>
+               <textarea name="pesan" required></textarea>
                 <br><br>
                 
                 <input type="submit" value="Kirim">
@@ -58,5 +59,6 @@
         <p>© 2026 Deswita Salsabila</p>
     </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
