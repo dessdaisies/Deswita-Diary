@@ -1,0 +1,19 @@
+<?php
+// 1. Panggil koneksi
+include "koneksi.php";
+
+// 2. Ambil data dari form input_diary.php
+$judul   = $_POST['judul'];
+$isi     = $_POST['isi_cerita'];
+
+// 3. Query Insert (Memasukkan data)
+$query = "INSERT INTO tb_diary (judul, isi_cerita) VALUES ('$judul', '$isi')";
+$hasil = mysqli_query($koneksi, $query);
+
+// 4. Cek apakah berhasil
+if ($hasil) {
+    echo "<script>alert('Berhasil simpan diary!'); window.location='tampil_diary.php';</script>";
+} else {
+    echo "Duh, gagal simpan: " . mysqli_error($koneksi);
+}
+?>
