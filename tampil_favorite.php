@@ -22,5 +22,5 @@ $query = mysqli_query($koneksi, "SELECT * FROM tb_favorites");
         ?>
     </table>
     <br>
-    <a href="input_favorite.php">Tambah Lagi</a>
+    <a href="input_favorite.php">Tambah Lagi</a> | <a href="deswita.html">Ke Home</a>
 </div>
