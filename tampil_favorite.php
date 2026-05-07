@@ -1,26 +1,42 @@
 <?php
 include "koneksi.php";
-$query = mysqli_query($koneksi, "SELECT * FROM tb_favorites");
+// Ganti tb_favorites jadi favorite sesuai nama tabelmu
+$query = mysqli_query($koneksi, "SELECT * FROM favorite");
 ?>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Favorit - Deswita Diary</title>
+</head>
+<body>
+
 <div class="container">
-    <h2>🌟 My Favorite Things List 🌟</h2>
-    <table border="1">
-        <tr>
+    <h2>My Favorite Things List</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr bgcolor="#f2f2f2">
             <th>No</th>
             <th>Kategori</th>
             <th>Favorit Saya</th>
         </tr>
+
         <?php
-        while ($row = mysqli_fetch_row($query)) {
-            echo "<tr>
-                    <td>$row[0]</td>
-                    <td>$row[1]</td>
-                    <td>$row[2]</td>
-                  </tr>";
+        $no = 1; // Membuat nomor urut manual agar lebih rapi
+        while ($row = mysqli_fetch_array($query)) {
+            echo "<tr>";
+            echo "<td>" . $no++ . "</td>";
+            echo "<td>" . $row['kategori'] . "</td>"; // Nama kolom di DB
+            echo "<td>" . $row['favorite'] . "</td>"; // Nama kolom di DB
+            echo "</tr>";
         }
         mysqli_close($koneksi);
         ?>
     </table>
+    
     <br>
-    <a href="input_favorite.php">Tambah Lagi</a> | <a href="deswita.html">Ke Home</a>
+    <a href="input_favorite.php">Tambah Lagi</a> | <a href="index.php">Ke Home</a>
 </div>
+
+</body>
+</html>

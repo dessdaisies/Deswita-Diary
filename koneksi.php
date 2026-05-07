@@ -1,15 +1,14 @@
 <?php
 
-$host = "localhost:3307";
+$host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "db_diary_deswita";
+$db   = "deswita_diary";
 
-$koneksi = mysqli_connect($host, $user, $pass);
-
-mysqli_select_db($koneksi, $db);
+$koneksi = mysqli_connect($host, $user, $pass, $db);
 
 if (!$koneksi) {
-    die("koneksi ke database gagal: " . mysqli_connect_error());
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
+
 ?>

@@ -2,10 +2,9 @@
 include "koneksi.php";
 
 $kat  = $_POST['kategori'];
-$fav  = $_POST['nama_favorit'];
+$fav  = $_POST['nama_favorit']; 
 
-// SQL untuk simpan ke tabel favorites
-$query = "INSERT INTO tb_favorites (kategori, nama_favorit) VALUES ('$kat', '$fav')";
+$query = "INSERT INTO favorite (kategori, favorite) VALUES ('$kat', '$fav')";
 $hasil = mysqli_query($koneksi, $query);
 
 if ($hasil) {
@@ -13,5 +12,6 @@ if ($hasil) {
 } else {
     echo "Gagal simpan: " . mysqli_error($koneksi);
 }
+
 mysqli_close($koneksi); 
 ?>
