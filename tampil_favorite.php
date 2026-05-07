@@ -18,7 +18,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM favorit");
         <tr bgcolor="#f2f2f2">
             <th>No</th>
             <th>Kategori</th>
-            <th>Favorit Saya</th>
+            <th>Favorit</th>
         </tr>
 
         <?php
@@ -27,7 +27,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM favorit");
             echo "<tr>";
             echo "<td>" . $no++ . "</td>";
             echo "<td>" . $row['kategori'] . "</td>"; // Nama kolom di DB
-            echo "<td>" . $row['favorite'] . "</td>"; // Nama kolom di DB
+            echo "<td>" . $row['favorit'] . "</td>"; // Nama kolom di DB
             echo "</tr>";
         }
         mysqli_close($koneksi);
