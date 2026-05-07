@@ -1,7 +1,7 @@
 <?php
 include "koneksi.php";
-// Ganti tb_favorites jadi favorite sesuai nama tabelmu
-$query = mysqli_query($koneksi, "SELECT * FROM tb_favorite");
+
+$query = mysqli_query($koneksi, "SELECT * FROM favorit");
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM tb_favorite");
         </tr>
 
         <?php
-        $no = 1; // Membuat nomor urut manual agar lebih rapi
+        $no = 1; 
         while ($row = mysqli_fetch_array($query)) {
             echo "<tr>";
             echo "<td>" . $no++ . "</td>";
