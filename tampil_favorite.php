@@ -1,7 +1,7 @@
 <?php
 include "koneksi.php";
 // Ganti tb_favorites jadi favorite sesuai nama tabelmu
-$query = mysqli_query($koneksi, "SELECT * FROM favorite");
+$query = mysqli_query($koneksi, "SELECT * FROM tb_favorite");
 ?>
 
 <!DOCTYPE html>
