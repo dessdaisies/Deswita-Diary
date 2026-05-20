@@ -72,11 +72,24 @@ th, td{
     text-align: center;
 }
 
+.photo{
+    text-align: center;
+    background-color: #fff0f6;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 .foto-home{
     display: block;
     margin: 25px auto;
     width: 180px;
     border-radius: 50%;
+}
+
+.photo img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 .gallery{
@@ -107,6 +120,13 @@ th, td{
     border-radius: 15px;
     border: 2px solid rgb(248, 174, 186);
     margin-top: 20px;
+}
+
+.fav-img{
+    width: 180px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid pink;
 }
 
 form{

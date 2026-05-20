@@ -35,7 +35,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM favorit");
     </table>
     
     <br>
-    <a href="input_favorite.php">Tambah Lagi</a> | <a href="index.php">Ke Home</a>
+    <a href="input_favorite.php">Tambah Lagi</a> | <a href="simpan_favorite.php">Ke Home</a>
 </div>
 
 </body>

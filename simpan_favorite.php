@@ -2,7 +2,7 @@
 include "koneksi.php";
 
 $kat  = $_POST['kategori'];
-$fav  = $_POST['nama_favorit']; 
+$fav  = $_POST['nama_favorite']; 
 
 $query = "INSERT INTO favorit (kategori, favorit) VALUES ('$kat', '$fav')";
 $hasil = mysqli_query($koneksi, $query);
