@@ -115,11 +115,28 @@ th, td{
 }
 
 .message-box{
+    max-width: 400px;
+    margin: 80px auto;
+    text-align: center;
     background-color: #fff0f6;
-    padding: 25px;
+    padding: 30px;
     border-radius: 15px;
-    border: 2px solid rgb(248, 174, 186);
-    margin-top: 20px;
+    border: 2px solid #f8aeba;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.message-box a{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #ff4fa3;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.message-box a:hover{
+    background-color: #ff2a8a;
 }
 
 .fav-img{
@@ -161,4 +178,33 @@ footer{
     text-align: center;
     padding: 12px;
     margin-top: 30px;
+}
+
+.dashboard-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: #ff4fa3;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #ff2a8a;
+}
+
+.logout{
+    background-color: #999;
+}
+
+.logout:hover{
+    background-color: #666;
 }
